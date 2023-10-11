@@ -24,7 +24,6 @@ rotation=cv2.warpAffine(img,move,(width,height))
 
 ratio=200.0/width
 dimension=(200,int(height*ratio))
-
 resized=cv2.resize(img,dimension,interpolation=cv2.INTER_AREA)
 
 mask=np.zeros(img.shape[0:2],dtype='uint8')
